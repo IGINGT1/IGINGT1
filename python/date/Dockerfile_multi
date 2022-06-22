@@ -9,4 +9,6 @@ COPY --from=base \
 COPY --from=base /usr/local/bin /usr/local/bin
 
 COPY . .
-CMD ["python", "main.py"]
+
+ENTRYPOINT [ "python", "main.py" ]
+CMD []
